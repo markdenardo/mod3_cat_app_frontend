@@ -2,14 +2,13 @@
 Mark's Bad Cat App
 
 ------------------------------------------------------------------------------------------------------------------------------------------
-
 CREATE
 
 -a user is able to make a new instance of a cat which will persist on the page fetched (POST) to the postgresql database
 
 -the create form is an html form on the index.html page fetch (GET)
 
--the image is a fetch request from the Cat API (GET) fetch to (https://docs.thecatapi.com/) 
+-the image is a fetch request from the Cat API (GET) fetch to (https://docs.thecatapi.com/)
 
 -read the documentation on the Cat API to get fetch, header, and body protocol
 
@@ -19,28 +18,28 @@ CREATE
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
-READ
+  READ
 
--a user is able to see all of the cats fetch (GET) to 'localhost:3000' JSON api
+  -a user is able to see all of the cats fetch (GET) to 'localhost:3000' JSON api
 
--all the cat-cards will be shown in the 'cat-collection' div
+  -all the cat-cards will be shown in the 'cat-collection' div
 
--each cat-card will display the name, owner, image, and number of likes in the 'cat-collection' div
+  -each cat-card will display the name, owner, image, and number of likes in the 'cat-collection' div
 
--a user is able to see all the cats owned by a single user (stretch)
-
-------------------------------------------------------------------------------------------------------------------------------------------
-
-UPDATE
-
--a user is able to update the name of their cat (PATCH) fetch to 'localhost:3000' JSON api
+  -a user is able to see all the cats owned by a single user (stretch)
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
-DESTROY
+  UPDATE
 
--a user is able to delete a cat
+  -a user is able to increase the number of like of any cat (PATCH) fetch to 'localhost:3000' JSON api
 
--a user is able to delete their name
+  ------------------------------------------------------------------------------------------------------------------------------------------
 
-------------------------------------------------------------------------------------------------------------------------------------------
+  DESTROY
+
+  -a user is able to delete a cat (stretch)
+
+  -a user is able to delete their name (stretch)
+
+  ------------------------------------------------------------------------------------------------------------------------------------------

@@ -11,4 +11,4 @@
 11. add routes: #get '/cats', to: 'cats#index', as: 'cats'
 12. uncomment cors gemfile and run bundle install
 13. uncomment cors file and add *
-14. 
+14.

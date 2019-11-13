@@ -1,4 +1,26 @@
 body {
  background-image: url("https://vignette.wikia.nocookie.net/warrior-cat-clans/images/2/2d/Poisonheart.jpg/revision/latest?cb=20140517013744");
  background-color: #4169e1;
+ background-attachment: fixed;
+ background-repeat: no-repeat;;
+}
+
+
+#cat-collection{
+
+
+}
+
+#newDiv{
+
+  width: 50%;
+  border-radius: 15px;
+  /* border: 2px solid white; */
+  background-size:cover;
+
+}
+
+.img{
+max-width:100%;
+height:auto;
 }
