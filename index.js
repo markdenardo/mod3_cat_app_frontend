@@ -152,7 +152,7 @@ function makeCat(user, cat, caturl) {
 //------------------------------------------------------------------------------------------------------------------------------------------
 
 // Time to PATCH
-function like(cat, event
+function like(cat, event){
 
     let addLike = parseInt(event.target.innerText.slice(7)) + 1;
   // let id = cat.target.previousElementSibling.id
@@ -170,13 +170,13 @@ function like(cat, event
     })
   })
   .then( res => res.json())
-  .then( jsonObj =>
+  .then( jsonObj => {
     event.target.innerText = `Likes: ${jsonObj.likes}`
     // cat.target.previousElementSibling.innerText = `${jsonObj.likes} likes`
   })
 }
 
-// ------------ deletet
+// ------------ delete
 
 
 getCats().then( cats => {
