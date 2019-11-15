@@ -32,7 +32,7 @@ CREATE
 
   UPDATE
 
-  -a user is able to increase the number of like of any cat (PATCH) fetch to 'localhost:3000' JSON api
+  <!-- -a user is able to increase the number of like of any cat (PATCH) fetch to 'localhost:3000' JSON api -->
 
   ------------------------------------------------------------------------------------------------------------------------------------------
 

@@ -8,6 +8,21 @@ body {
 
 
 #cat-collection{
+max-width:70%;
+max-height:70%;
+
+}
+
+.css_styling_div{
+  max-width:50%;
+  max-height:50%;
+
+}
+
+
+
+.form_css_styling{
+ width: 70%;
 
 
 }
@@ -22,6 +37,13 @@ body {
 }
 
 .img{
+border: 3px solid white;
+border-radius: 50px;
 max-width:100%;
 height:auto;
+}
+
+h1{
+  text-align: left;
+  color: #4169e1;
 }
