@@ -196,7 +196,16 @@ function postCat(){
 
 
     // fetch to Create a new user in the database
-
+    fetch('http://localhost:3000/users',{
+        method: "POST",                         //1st Fetch POST
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify({
+          "name": userInput
+        })
+      })
     .then(r => r.json())
     .then(userObj => {
       // returns a new User obj
