@@ -1,5 +1,5 @@
 //---------------------------------------------------------------------------------------------------------------------------------
-// Selecting things from the HTML page to call them inside my DOM JS
+// Selecting things from the HTML page to call them inside the DOM JS
 //---------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -12,7 +12,7 @@ let container = document.querySelector(".container");
 
 
 //---------------------------------------------------------------------------------------------------------------------------------
-// Fetch Cats from the rails API || getCats : is where my function fetches the API
+// Fetch Cats from the rails API || getCats : is where the function fetches the API
 //---------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -26,7 +26,7 @@ function getCats(){
 
 
 //---------------------------------------------------------------------------------------------------------------------------------
-// Rendering fetch API to the DOM || renderCats is where my function creates the element tags, and assigns the values to them
+// Rendering fetch API to the DOM || renderCats is where the function creates the element tags, and assigns the values
 //---------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -38,7 +38,7 @@ function renderCats(cat){
   let h1 = document.createElement('h1')
   let img = document.createElement('img')
   let button = document.createElement('button')
-  let bigButton = document.createElement('button')
+  let bigButton = document.createElement('button') // for removal for revi
   let h3 = document.createElement('h3')
   let deleteButton = document.createElement('button')
 
@@ -66,7 +66,7 @@ function renderCats(cat){
   button.innerText = `Likes: ${cat.likes}`
 
   bigButton.id = `${cat.id}`
-  bigButton.innerText = `make ${cat.name} uppercase`  // uppercase the cats name once the button uppercase is clicked
+  bigButton.innerText = `make ${cat.name} uppercase`  // uppercase the cats name, once the button uppercase is clicked
 
   h3.id = `${cat.id}`
   h3.innerText = `owner of ${cat.user.name}`
@@ -196,16 +196,7 @@ function postCat(){
 
 
     // fetch to Create a new user in the database
-    fetch('http://localhost:3000/users',{
-      method: "POST",                         //1st Fetch POST
-      headers: {
-        "Content-Type": "application/json",
-        "Accept": "application/json"
-      },
-      body: JSON.stringify({
-        "name": userInput
-      })
-    })
+
     .then(r => r.json())
     .then(userObj => {
       // returns a new User obj
@@ -286,7 +277,7 @@ function like(cat, event){
 //---------------------------------------------------------------------------------------------------------------------------------
 
 
-    function bigUp(cat, event, h1){
+function bigUp(cat, event, h1){
       let makeUppercase = cat.name.toUpperCase()
       let id = cat.id
 
@@ -315,7 +306,7 @@ function like(cat, event){
 // Delete function to be called above once the Delete Button is clicked
 //---------------------------------------------------------------------------------------------------------------------------------
 
-  function deleteCat(cat, newDiv){
+function deleteCat(cat, newDiv){
       return fetch(`http://localhost:3000/cats/${cat.id}`, {
         method: "DELETE"
       }) //End of Fetch
