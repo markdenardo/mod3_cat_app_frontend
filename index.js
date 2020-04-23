@@ -17,7 +17,7 @@ let container = document.querySelector(".container");
 
 
 function getCats(){
-  return fetch("http://localhost:3000/cats")
+  return fetch("https://bad-cat-app.herokuapp.com//cats")
   .then( res => res.json() )
 }
 
@@ -196,7 +196,7 @@ function postCat(){
 
 
     // fetch to Create a new user in the database
-    fetch('http://localhost:3000/users',{
+    fetch('https://bad-cat-app.herokuapp.com//users',{
         method: "POST",                         //1st Fetch POST
         headers: {
           "Content-Type": "application/json",
@@ -220,7 +220,7 @@ function postCat(){
 
 // fetch to create a new cat in the db
 function makeCat(userInput, cat, caturl) {
-  fetch('http://localhost:3000/cats', {
+  fetch('https://bad-cat-app.herokuapp.com//cats', {
     method: "POST",                        //2nd Fetch POST
     headers: {
       "Content-Type": "application/json",
@@ -263,7 +263,7 @@ function like(cat, event){
 // the URL and an object {}
 
 
-  fetch(`http://localhost:3000/cats/${event.target.id}`, {
+  fetch(`https://bad-cat-app.herokuapp.com//cats/${event.target.id}`, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",
@@ -293,7 +293,7 @@ function bigUp(cat, event, h1){
       // REMEMBER: When posting and patching, fetch takes 2 arguments.
       // the URL and an object {}
 
-      fetch(`http://localhost:3000/cats/${id}`, {
+      fetch(`https://bad-cat-app.herokuapp.com//cats/${id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -316,7 +316,7 @@ function bigUp(cat, event, h1){
 //---------------------------------------------------------------------------------------------------------------------------------
 
 function deleteCat(cat, newDiv){
-      return fetch(`http://localhost:3000/cats/${cat.id}`, {
+      return fetch(`https://bad-cat-app.herokuapp.com//cats/${cat.id}`, {
         method: "DELETE"
       }) //End of Fetch
       .then(data => {
